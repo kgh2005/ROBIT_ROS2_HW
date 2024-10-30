@@ -1,7 +1,7 @@
 #include "turtlesim_cli.hpp"
 
 TurtlesimCli::TurtlesimCli() : Node("turtlesim_cli") {
-    // Publisher 및 Client 초기화
+    // Publisher, Client 초기화
     control_publisher_ = this->create_publisher<geometry_msgs::msg::Twist>("/turtle1/cmd_vel", 10);
     set_pen_client_ = this->create_client<turtlesim::srv::SetPen>("/turtle1/set_pen");
     clear_client_ = this->create_client<std_srvs::srv::Empty>("/clear");
@@ -117,7 +117,6 @@ void TurtlesimCli::set_turtle_shape() {
 
     // 기존 거북이 삭제
     auto kill_request = std::make_shared<turtlesim::srv::Kill::Request>();
-    kill_request->name = "turtle1";
 
     if (kill_client_->wait_for_service(std::chrono::seconds(1))) {
         auto kill_result = kill_client_->async_send_request(kill_request);
