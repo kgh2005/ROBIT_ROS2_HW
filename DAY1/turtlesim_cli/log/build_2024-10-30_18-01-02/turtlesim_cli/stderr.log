@@ -1,0 +1,35 @@
+[01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:18:22:[m[K [01;35m[Kwarning: [m[Kmissing terminating " character
+   18 |         std::cout << [01;35m[K"[m[K\n1: 조종\n
+      |                      [01;35m[K^[m[K
+[01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:18:22:[m[K [01;31m[Kerror: [m[Kmissing terminating " character
+   18 |         std::cout << [01;31m[K"\n1: 조종\n[m[K
+      |                      [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:19:23:[m[K [01;31m[Kerror: [m[Kstray ‘[01m[K\[m[K’ in program
+   19 |         2: 배경색 설정[01;31m[K\[m[Kn
+      |                       [01;31m[K^[m[K
+[01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:20:23:[m[K [01;31m[Kerror: [m[Kstray ‘[01m[K\[m[K’ in program
+   20 |         3: 거북이 설정[01;31m[K\[m[Kn
+      |                       [01;31m[K^[m[K
+[01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:21:20:[m[K [01;31m[Kerror: [m[Kstray ‘[01m[K\[m[K’ in program
+   21 |         4: Pen 설정[01;31m[K\[m[Kn
+      |                    [01;31m[K^[m[K
+[01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:22:16:[m[K [01;31m[Kerror: [m[Kstray ‘[01m[K\[m[K’ in program
+   22 |         5: 종료[01;31m[K\[m[Kn";
+      |                [01;31m[K^[m[K
+[01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:22:18:[m[K [01;35m[Kwarning: [m[Kmissing terminating " character
+   22 |         5: 종료\n[01;35m[K"[m[K;
+      |                  [01;35m[K^[m[K
+[01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:22:18:[m[K [01;31m[Kerror: [m[Kmissing terminating " character
+   22 |         5: 종료\n[01;31m[K";[m[K
+      |                  [01;31m[K^~[m[K
+[01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:[m[K In member function ‘[01m[Kvoid TurtlesimCli::start_cli()[m[K’:
+[01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:19:10:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K:[m[K’ token
+   19 |         2[01;31m[K:[m[K 배경색 설정\n
+      |          [01;31m[K^[m[K
+      |          [32m[K;[m[K
+[01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:25:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kmode_number[m[K’ was not declared in this scope
+   25 |         std::cin >> [01;31m[Kmode_number[m[K;
+      |                     [01;31m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/turtlesim_cli.dir/build.make:90: CMakeFiles/turtlesim_cli.dir/src/turtlesim_cli.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/turtlesim_cli.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,10 @@
+/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/build/turtlesim_cli/CMakeFiles/uninstall.dir
+/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/build/turtlesim_cli/CMakeFiles/turtlesim_cli_uninstall.dir
+/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/build/turtlesim_cli/CMakeFiles/turtlesim_cli.dir
+/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/build/turtlesim_cli/CMakeFiles/test.dir
+/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/build/turtlesim_cli/CMakeFiles/edit_cache.dir
+/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/build/turtlesim_cli/CMakeFiles/rebuild_cache.dir
+/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/build/turtlesim_cli/CMakeFiles/list_install_components.dir
+/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/build/turtlesim_cli/CMakeFiles/install.dir
+/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/build/turtlesim_cli/CMakeFiles/install/local.dir
+/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/build/turtlesim_cli/CMakeFiles/install/strip.dir

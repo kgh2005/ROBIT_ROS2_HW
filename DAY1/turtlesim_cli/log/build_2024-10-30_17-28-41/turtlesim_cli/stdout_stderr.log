@@ -1,0 +1,10 @@
+[35m[1mConsolidate compiler generated dependencies of target turtlesim_cli[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/turtlesim_cli.dir/src/main.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/turtlesim_cli.dir/src/turtlesim_cli.cpp.o[0m
+[01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:3:1:[m[K [01;31m[Kerror: [m[K‘[01m[KTurtlesimCliNode[m[K’ does not name a type; did you mean ‘[01m[KTurtlesimCli[m[K’?
+    3 | [01;31m[KTurtlesimCliNode[m[K::TurtlesimCli() : Node("turtlesim_cli") {
+      | [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      | [32m[KTurtlesimCli[m[K
+gmake[2]: *** [CMakeFiles/turtlesim_cli.dir/build.make:90: CMakeFiles/turtlesim_cli.dir/src/turtlesim_cli.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/turtlesim_cli.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

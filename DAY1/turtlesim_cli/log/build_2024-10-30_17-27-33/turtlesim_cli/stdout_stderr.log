@@ -1,0 +1,30 @@
+[35m[1mConsolidate compiler generated dependencies of target turtlesim_cli[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/turtlesim_cli.dir/src/turtlesim_cli.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/turtlesim_cli.dir/src/main.cpp.o[0m
+[01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/main.cpp:7:34:[m[K [01;31m[Kerror: [m[K‘[01m[KTurtleSimCli[m[K’ was not declared in this scope; did you mean ‘[01m[KTurtlesimCli[m[K’?
+    7 |     auto node = std::make_shared<[01;31m[KTurtleSimCli[m[K>();  // TurtleSimCLI 노드 생성
+      |                                  [01;31m[K^~~~~~~~~~~~[m[K
+      |                                  [32m[KTurtlesimCli[m[K
+[01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/main.cpp:7:47:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >()[m[K’
+    7 |     auto node = [01;31m[Kstd::make_shared<TurtleSimCli>()[m[K;  // TurtleSimCLI 노드 생성
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/main.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+  875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/main.cpp:7:47:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+    7 |     auto node = [01;31m[Kstd::make_shared<TurtleSimCli>()[m[K;  // TurtleSimCLI 노드 생성
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:3:1:[m[K [01;31m[Kerror: [m[K‘[01m[KTurtlesimCliNode[m[K’ does not name a type; did you mean ‘[01m[KTurtlesimCli[m[K’?
+    3 | [01;31m[KTurtlesimCliNode[m[K::TurtlesimCli() : Node("turtlesim_cli") {
+      | [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      | [32m[KTurtlesimCli[m[K
+gmake[2]: *** [CMakeFiles/turtlesim_cli.dir/build.make:76: CMakeFiles/turtlesim_cli.dir/src/main.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/turtlesim_cli.dir/build.make:90: CMakeFiles/turtlesim_cli.dir/src/turtlesim_cli.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/turtlesim_cli.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

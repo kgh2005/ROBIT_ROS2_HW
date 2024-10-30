@@ -1,0 +1,66 @@
+[01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:[m[K In member function ‘[01m[Kvoid TurtleSimCLI::setBackgroundColor()[m[K’:
+[01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:92:83:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kshared_from_this[m[K’ is ambiguous
+   92 |     auto parameter_client = std::make_shared<rclcpp::AsyncParametersClient>(this->[01;31m[Kshared_from_this[m[K(), "turtlesim");
+      |                                                                                   [01;31m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/include/turtlesim_cli.hpp:4[m[K,
+                 from [01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:811:7:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[Kstd::shared_ptr<const _Tp> std::enable_shared_from_this<_Tp>::shared_from_this() const [with _Tp = TurtleSimCLI][m[K’
+  811 |       [01;36m[Kshared_from_this[m[K() const
+      |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:807:7:[m[K [01;36m[Knote: [m[K                ‘[01m[Kstd::shared_ptr<_Tp> std::enable_shared_from_this<_Tp>::shared_from_this() [with _Tp = TurtleSimCLI][m[K’
+  807 |       [01;36m[Kshared_from_this[m[K()
+      |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:811:7:[m[K [01;36m[Knote: [m[K                ‘[01m[Kstd::shared_ptr<const _Tp> std::enable_shared_from_this<_Tp>::shared_from_this() const [with _Tp = rclcpp::Node][m[K’
+  811 |       [01;36m[Kshared_from_this[m[K() const
+      |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:807:7:[m[K [01;36m[Knote: [m[K                ‘[01m[Kstd::shared_ptr<_Tp> std::enable_shared_from_this<_Tp>::shared_from_this() [with _Tp = rclcpp::Node][m[K’
+  807 |       [01;36m[Kshared_from_this[m[K()
+      |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:103:54:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kshared_from_this[m[K’ is ambiguous
+  103 |         if (rclcpp::spin_until_future_complete(this->[01;31m[Kshared_from_this[m[K(), result) == rclcpp::FutureReturnCode::SUCCESS) {
+      |                                                      [01;31m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/include/turtlesim_cli.hpp:4[m[K,
+                 from [01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:811:7:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[Kstd::shared_ptr<const _Tp> std::enable_shared_from_this<_Tp>::shared_from_this() const [with _Tp = TurtleSimCLI][m[K’
+  811 |       [01;36m[Kshared_from_this[m[K() const
+      |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:807:7:[m[K [01;36m[Knote: [m[K                ‘[01m[Kstd::shared_ptr<_Tp> std::enable_shared_from_this<_Tp>::shared_from_this() [with _Tp = TurtleSimCLI][m[K’
+  807 |       [01;36m[Kshared_from_this[m[K()
+      |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:811:7:[m[K [01;36m[Knote: [m[K                ‘[01m[Kstd::shared_ptr<const _Tp> std::enable_shared_from_this<_Tp>::shared_from_this() const [with _Tp = rclcpp::Node][m[K’
+  811 |       [01;36m[Kshared_from_this[m[K() const
+      |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:807:7:[m[K [01;36m[Knote: [m[K                ‘[01m[Kstd::shared_ptr<_Tp> std::enable_shared_from_this<_Tp>::shared_from_this() [with _Tp = rclcpp::Node][m[K’
+  807 |       [01;36m[Kshared_from_this[m[K()
+      |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:[m[K In member function ‘[01m[Kvoid TurtleSimCLI::setPen()[m[K’:
+[01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:154:43:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kspin_until_future_complete(TurtleSimCLI*, rclcpp::Client<turtlesim::srv::SetPen>::FutureAndRequestId&)[m[K’
+  154 |     if ([01;31m[Krclcpp::spin_until_future_complete(this, result_future)[m[K == rclcpp::FutureReturnCode::SUCCESS) {
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/include/turtlesim_cli.hpp:4[m[K,
+                 from [01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:105:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class FutureT, class TimeRepT, class TimeT> rclcpp::FutureReturnCode rclcpp::spin_until_future_complete(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr, const FutureT&, std::chrono::duration<_Rep, _Period>)[m[K’
+  105 | [01;36m[Kspin_until_future_complete[m[K(
+      | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:105:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:154:44:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K(TurtleSimCLI*)this[m[K’ (type ‘[01m[KTurtleSimCLI*[m[K’) to type ‘[01m[Krclcpp::node_interfaces::NodeBaseInterface::SharedPtr[m[K’ {aka ‘[01m[Kstd::shared_ptr<rclcpp::node_interfaces::NodeBaseInterface>[m[K’}
+  154 |     if (rclcpp::spin_until_future_complete([01;36m[Kthis[m[K, result_future) == rclcpp::FutureReturnCode::SUCCESS) {
+      |                                            [01;36m[K^~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/include/turtlesim_cli.hpp:4[m[K,
+                 from [01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:117:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class NodeT, class FutureT, class TimeRepT, class TimeT> rclcpp::FutureReturnCode rclcpp::spin_until_future_complete(std::shared_ptr<_Tp>, const FutureT&, std::chrono::duration<_Rep2, _Period2>)[m[K’
+  117 | [01;36m[Kspin_until_future_complete[m[K(
+      | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:117:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:154:43:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::shared_ptr<_Tp>[m[K’ and ‘[01m[KTurtleSimCLI*[m[K’
+  154 |     if ([01;36m[Krclcpp::spin_until_future_complete(this, result_future)[m[K == rclcpp::FutureReturnCode::SUCCESS) {
+      |         [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/turtlesim_cli.dir/build.make:90: CMakeFiles/turtlesim_cli.dir/src/turtlesim_cli.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/turtlesim_cli.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,26 @@
+[0.007s] Invoking command in '/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/build/turtlesim_cli': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/build/turtlesim_cli -- -j20 -l20
+[0.037s] [35m[1mConsolidate compiler generated dependencies of target turtlesim_cli[0m
+[0.051s] [ 25%] [32mBuilding CXX object CMakeFiles/turtlesim_cli.dir/src/turtlesim_cli.cpp.o[0m
+[2.469s] [ 50%] [32m[1mLinking CXX executable turtlesim_cli[0m
+[2.637s] [100%] Built target turtlesim_cli
+[2.648s] Invoked command in '/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/build/turtlesim_cli' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/build/turtlesim_cli -- -j20 -l20
+[2.676s] Invoking command in '/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/build/turtlesim_cli': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/build/turtlesim_cli
+[2.681s] -- Install configuration: ""
+[2.681s] -- Installing: /home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/install/turtlesim_cli/lib/turtlesim_cli/turtlesim_cli
+[2.682s] -- Set runtime path of "/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/install/turtlesim_cli/lib/turtlesim_cli/turtlesim_cli" to ""
+[2.682s] -- Up-to-date: /home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/install/turtlesim_cli/share/ament_index/resource_index/package_run_dependencies/turtlesim_cli
+[2.682s] -- Up-to-date: /home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/install/turtlesim_cli/share/ament_index/resource_index/parent_prefix_path/turtlesim_cli
+[2.682s] -- Up-to-date: /home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/install/turtlesim_cli/share/turtlesim_cli/environment/ament_prefix_path.sh
+[2.682s] -- Up-to-date: /home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/install/turtlesim_cli/share/turtlesim_cli/environment/ament_prefix_path.dsv
+[2.682s] -- Up-to-date: /home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/install/turtlesim_cli/share/turtlesim_cli/environment/path.sh
+[2.683s] -- Up-to-date: /home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/install/turtlesim_cli/share/turtlesim_cli/environment/path.dsv
+[2.683s] -- Up-to-date: /home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/install/turtlesim_cli/share/turtlesim_cli/local_setup.bash
+[2.683s] -- Up-to-date: /home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/install/turtlesim_cli/share/turtlesim_cli/local_setup.sh
+[2.683s] -- Up-to-date: /home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/install/turtlesim_cli/share/turtlesim_cli/local_setup.zsh
+[2.683s] -- Up-to-date: /home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/install/turtlesim_cli/share/turtlesim_cli/local_setup.dsv
+[2.683s] -- Installing: /home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/install/turtlesim_cli/share/turtlesim_cli/package.dsv
+[2.683s] -- Up-to-date: /home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/install/turtlesim_cli/share/ament_index/resource_index/packages/turtlesim_cli
+[2.683s] -- Up-to-date: /home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/install/turtlesim_cli/share/turtlesim_cli/cmake/turtlesim_cliConfig.cmake
+[2.684s] -- Up-to-date: /home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/install/turtlesim_cli/share/turtlesim_cli/cmake/turtlesim_cliConfig-version.cmake
+[2.684s] -- Up-to-date: /home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/install/turtlesim_cli/share/turtlesim_cli/package.xml
+[2.684s] Invoked command in '/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/build/turtlesim_cli' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/build/turtlesim_cli

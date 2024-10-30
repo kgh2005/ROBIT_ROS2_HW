@@ -1,0 +1,72 @@
+[0.006s] Invoking command in '/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/build/turtlesim_cli': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/build/turtlesim_cli -- -j20 -l20
+[0.022s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.094s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.108s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.109s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.112s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.117s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.123s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.140s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.141s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.198s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.223s] -- Found turtlesim: 1.4.2 (/opt/ros/humble/share/turtlesim/cmake)
+[0.242s] -- Found std_srvs: 4.2.4 (/opt/ros/humble/share/std_srvs/cmake)
+[0.246s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.254s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.294s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.294s] -- Configured cppcheck include dirs: /home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/include
+[0.294s] -- Configured cppcheck exclude dirs and/or files: 
+[0.295s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.296s] -- Added test 'lint_cmake' to check CMake code style
+[0.296s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.300s] -- Added test 'uncrustify' to check C / C++ code style
+[0.300s] -- Configured uncrustify additional arguments: 
+[0.300s] -- Added test 'xmllint' to check XML markup files
+[0.300s] -- Configuring done
+[0.306s] -- Generating done
+[0.307s] -- Build files have been written to: /home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/build/turtlesim_cli
+[0.325s] [35m[1mConsolidate compiler generated dependencies of target turtlesim_cli[0m
+[0.336s] [ 33%] [32mBuilding CXX object CMakeFiles/turtlesim_cli.dir/src/turtlesim_cli.cpp.o[0m
+[1.595s] [01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:[m[K In member function ‘[01m[Kvoid TurtleSimCLI::processInput(int)[m[K’:
+[1.595s] [01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:57:9:[m[K [01;31m[Kerror: [m[K‘[01m[KsetBackgroundColor[m[K’ was not declared in this scope
+[1.595s]    57 |         [01;31m[KsetBackgroundColor[m[K();
+[1.595s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.599s] [01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:61:9:[m[K [01;31m[Kerror: [m[K‘[01m[KsetTurtleShape[m[K’ was not declared in this scope
+[1.599s]    61 |         [01;31m[KsetTurtleShape[m[K();
+[1.599s]       |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.602s] [01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:65:9:[m[K [01;31m[Kerror: [m[K‘[01m[KsetPen[m[K’ was not declared in this scope; did you mean ‘[01m[Ksetenv[m[K’?
+[1.602s]    65 |         [01;31m[KsetPen[m[K();
+[1.602s]       |         [01;31m[K^~~~~~[m[K
+[1.602s]       |         [32m[Ksetenv[m[K
+[1.603s] [01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:[m[K In function ‘[01m[Kvoid set_background_color()[m[K’:
+[1.603s] [01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:86:81:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[1.603s]    86 | er_client = std::make_shared<rclcpp::AsyncParametersClient>([01;31m[Kthis[m[K->shared_from_this(), "turtlesim");
+[1.603s]       |                                                             [01;31m[K^~~~[m[K
+[1.603s] 
+[1.607s] [01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:95:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kclear_client_[m[K’ was not declared in this scope
+[1.607s]    95 |             auto result = [01;31m[Kclear_client_[m[K->async_send_request(request);
+[1.607s]       |                           [01;31m[K^~~~~~~~~~~~~[m[K
+[1.607s] [01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:97:52:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[1.607s]    97 |             if (rclcpp::spin_until_future_complete([01;31m[Kthis[m[K->shared_from_this(), result) == rclcpp::FutureReturnCode::SUCCESS) {
+[1.607s]       |                                                    [01;31m[K^~~~[m[K
+[1.607s] [01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:[m[K At global scope:
+[1.607s] [01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:103:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid TurtleSimCLI::setTurtleShape()[m[K’
+[1.607s]   103 | void [01;31m[KTurtleSimCLI[m[K::setTurtleShape()
+[1.607s]       |      [01;31m[K^~~~~~~~~~~~[m[K
+[1.607s] [01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:103:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid TurtleSimCLI::setTurtleShape()[m[K’
+[1.607s] In file included from [01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:1[m[K:
+[1.607s] [01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/include/turtlesim_cli.hpp:11:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass TurtleSimCLI[m[K’ defined here
+[1.607s]    11 | class [01;36m[KTurtleSimCLI[m[K : public rclcpp::Node
+[1.607s]       |       [01;36m[K^~~~~~~~~~~~[m[K
+[1.607s] [01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:131:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid TurtleSimCLI::setPen()[m[K’
+[1.607s]   131 | void [01;31m[KTurtleSimCLI[m[K::setPen()
+[1.607s]       |      [01;31m[K^~~~~~~~~~~~[m[K
+[1.607s] [01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:131:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid TurtleSimCLI::setPen()[m[K’
+[1.607s] In file included from [01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:1[m[K:
+[1.607s] [01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/include/turtlesim_cli.hpp:11:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass TurtleSimCLI[m[K’ defined here
+[1.607s]    11 | class [01;36m[KTurtleSimCLI[m[K : public rclcpp::Node
+[1.607s]       |       [01;36m[K^~~~~~~~~~~~[m[K
+[1.859s] gmake[2]: *** [CMakeFiles/turtlesim_cli.dir/build.make:76: CMakeFiles/turtlesim_cli.dir/src/turtlesim_cli.cpp.o] Error 1
+[1.859s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/turtlesim_cli.dir/all] Error 2
+[1.859s] gmake: *** [Makefile:146: all] Error 2
+[1.861s] Invoked command in '/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/build/turtlesim_cli' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/build/turtlesim_cli -- -j20 -l20

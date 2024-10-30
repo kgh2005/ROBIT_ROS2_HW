@@ -1,0 +1,18 @@
+[0.008s] Invoking command in '/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/build/turtlesim_cli': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/build/turtlesim_cli -- -j20 -l20
+[0.042s] [35m[1mConsolidate compiler generated dependencies of target turtlesim_cli[0m
+[0.059s] [ 25%] [32mBuilding CXX object CMakeFiles/turtlesim_cli.dir/src/turtlesim_cli.cpp.o[0m
+[1.509s] [01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:[m[K In function ‘[01m[Kvoid set_background_color()[m[K’:
+[1.509s] [01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:86:81:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[1.509s]    86 | t = std::make_shared<rclcpp::AsyncParametersClient>([01;31m[Kthis[m[K->shared_from_this(), "turtlesim");
+[1.509s]       |                                                     [01;31m[K^~~~[m[K
+[1.510s] 
+[1.513s] [01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:95:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kclear_client_[m[K’ was not declared in this scope
+[1.513s]    95 |             auto result = [01;31m[Kclear_client_[m[K->async_send_request(request);
+[1.513s]       |                           [01;31m[K^~~~~~~~~~~~~[m[K
+[1.513s] [01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:97:52:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[1.513s]    97 |             if (rclcpp::spin_until_future_complete([01;31m[Kthis[m[K->shared_from_this(), result) == rclcpp::FutureReturnCode::SUCCESS) {
+[1.513s]       |                                                    [01;31m[K^~~~[m[K
+[1.847s] gmake[2]: *** [CMakeFiles/turtlesim_cli.dir/build.make:90: CMakeFiles/turtlesim_cli.dir/src/turtlesim_cli.cpp.o] Error 1
+[1.847s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/turtlesim_cli.dir/all] Error 2
+[1.848s] gmake: *** [Makefile:146: all] Error 2
+[1.849s] Invoked command in '/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/build/turtlesim_cli' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/build/turtlesim_cli -- -j20 -l20

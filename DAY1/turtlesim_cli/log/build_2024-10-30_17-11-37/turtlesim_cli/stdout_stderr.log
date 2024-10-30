@@ -1,0 +1,18 @@
+[35m[1mConsolidate compiler generated dependencies of target turtlesim_cli[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/turtlesim_cli.dir/src/main.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/turtlesim_cli.dir/src/turtlesim_control.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/turtlesim_cli.dir/src/turtlesim_cli.cpp.o[0m
+[01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:[m[K In function ‘[01m[Kvoid set_background_color()[m[K’:
+[01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:85:81:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   85 |         auto parameter_client = std::make_shared<rclcpp::AsyncParametersClient>([01;31m[Kthis[m[K->shared_from_this(), "turtlesim");
+      |                                                                                 [01;31m[K^~~~[m[K
+[01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:94:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kclear_client_[m[K’ was not declared in this scope
+   94 |             auto result = [01;31m[Kclear_client_[m[K->async_send_request(request);
+      |                           [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:96:52:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   96 |             if (rclcpp::spin_until_future_complete([01;31m[Kthis[m[K->shared_from_this(), result) == rclcpp::FutureReturnCode::SUCCESS) {
+      |                                                    [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/turtlesim_cli.dir/build.make:90: CMakeFiles/turtlesim_cli.dir/src/turtlesim_cli.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/turtlesim_cli.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
