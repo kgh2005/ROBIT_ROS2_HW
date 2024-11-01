@@ -13,31 +13,38 @@ TurtlesimCli::TurtlesimCli() : Node("turtlesim_cli") {
     this->declare_parameter("background_b", 0);
 }
 
-void TurtlesimCli::start_cli() {
+void TurtlesimCli::start_cli()
+{
     while (rclcpp::ok()) {
         std::cout << "\n1: 조종\n2: 배경색 설정\n3: 거북이 설정\n4: Pen 설정\n5: 종료\n";
         int mode_number;
         std::cin >> mode_number;
 
         switch (mode_number) {
-            case 1: control_mode();
+            case 1:
+                control_mode();
                 break;
-            case 2: set_background_color();
+            case 2:
+                set_background_color();
                 break;
-            case 3: set_turtle_shape();
+            case 3:
+                set_turtle_shape();
                 break;
-            case 4: set_pen_mode();
+            case 4:
+                set_pen_mode();
                 break;
             case 5:
                 return;
-            default: std::cout << "Error\n";
+            default:
+                std::cout << "Error\n";
                 break;
         }
     }
 }
 
 // 조종모드
-void TurtlesimCli::control_mode() {
+void TurtlesimCli::control_mode()
+{
     std::cout << "w,a,s,d / q 입력시 종료\n";
     geometry_msgs::msg::Twist twist;
     char input;
@@ -64,7 +71,8 @@ void TurtlesimCli::control_mode() {
     }
 }
 
-void TurtlesimCli::set_background_color() {
+void TurtlesimCli::set_background_color()
+{
     std::string color_input;
     std::cout << "r,g,b : ";
     std::cin >> color_input;
@@ -101,7 +109,8 @@ void TurtlesimCli::set_background_color() {
     }
 }
 
-void TurtlesimCli::set_turtle_shape() {
+void TurtlesimCli::set_turtle_shape()
+{
     std::cout << "\n1: ardent\n2: bouncy\n3: crystal\n4: dashing\n";
 
     int choice;
@@ -152,7 +161,8 @@ void TurtlesimCli::set_turtle_shape() {
     }
 }
 
-void TurtlesimCli::set_pen_mode() {
+void TurtlesimCli::set_pen_mode()
+{
     auto request = std::make_shared<turtlesim::srv::SetPen::Request>();
     std::string color_input;
     int width;

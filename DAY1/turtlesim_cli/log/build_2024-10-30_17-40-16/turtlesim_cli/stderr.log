@@ -1,7 +1,0 @@
-[01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:[m[K In member function ‘[01m[Kvoid TurtlesimCli::start_cli()[m[K’:
-[01m[K/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/src/turtlesim_cli.cpp:29:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_pen[m[K’ was not declared in this scope
-   29 |             case 4: [01;31m[Kset_pen[m[K();
-      |                     [01;31m[K^~~~~~~[m[K
-gmake[2]: *** [CMakeFiles/turtlesim_cli.dir/build.make:76: CMakeFiles/turtlesim_cli.dir/src/turtlesim_cli.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/turtlesim_cli.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

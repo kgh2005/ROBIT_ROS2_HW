@@ -1,2 +1,0 @@
-Invoking command in '/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/build/turtlesim_cli': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/build/turtlesim_cli -- -j20 -l20
-Invoked command in '/home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/build/turtlesim_cli' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kgh/GITHUB/ROBIT_ROS2_HW/DAY1/turtlesim_cli/build/turtlesim_cli -- -j20 -l20

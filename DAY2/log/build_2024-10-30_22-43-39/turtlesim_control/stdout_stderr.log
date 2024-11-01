@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target turtlesim_control[0m
+[  9%] [32mBuilding CXX object CMakeFiles/turtlesim_control.dir/src/main_window.cpp.o[0m
+[ 18%] [32m[1mLinking CXX executable turtlesim_control[0m
+[100%] Built target turtlesim_control
+-- Install configuration: ""
+-- Installing: /home/kgh/robot_ws/src/ROBIT_ROS2_HW/DAY2/install/turtlesim_control/lib/turtlesim_control/turtlesim_control
+-- Set runtime path of "/home/kgh/robot_ws/src/ROBIT_ROS2_HW/DAY2/install/turtlesim_control/lib/turtlesim_control/turtlesim_control" to ""
+-- Installing: /home/kgh/robot_ws/src/ROBIT_ROS2_HW/DAY2/install/turtlesim_control/share/ament_index/resource_index/package_run_dependencies/turtlesim_control
+-- Installing: /home/kgh/robot_ws/src/ROBIT_ROS2_HW/DAY2/install/turtlesim_control/share/ament_index/resource_index/parent_prefix_path/turtlesim_control
+-- Installing: /home/kgh/robot_ws/src/ROBIT_ROS2_HW/DAY2/install/turtlesim_control/share/turtlesim_control/environment/ament_prefix_path.sh
+-- Installing: /home/kgh/robot_ws/src/ROBIT_ROS2_HW/DAY2/install/turtlesim_control/share/turtlesim_control/environment/ament_prefix_path.dsv
+-- Installing: /home/kgh/robot_ws/src/ROBIT_ROS2_HW/DAY2/install/turtlesim_control/share/turtlesim_control/environment/path.sh
+-- Installing: /home/kgh/robot_ws/src/ROBIT_ROS2_HW/DAY2/install/turtlesim_control/share/turtlesim_control/environment/path.dsv
+-- Installing: /home/kgh/robot_ws/src/ROBIT_ROS2_HW/DAY2/install/turtlesim_control/share/turtlesim_control/local_setup.bash
+-- Installing: /home/kgh/robot_ws/src/ROBIT_ROS2_HW/DAY2/install/turtlesim_control/share/turtlesim_control/local_setup.sh
+-- Installing: /home/kgh/robot_ws/src/ROBIT_ROS2_HW/DAY2/install/turtlesim_control/share/turtlesim_control/local_setup.zsh
+-- Installing: /home/kgh/robot_ws/src/ROBIT_ROS2_HW/DAY2/install/turtlesim_control/share/turtlesim_control/local_setup.dsv
+-- Installing: /home/kgh/robot_ws/src/ROBIT_ROS2_HW/DAY2/install/turtlesim_control/share/turtlesim_control/package.dsv
+-- Installing: /home/kgh/robot_ws/src/ROBIT_ROS2_HW/DAY2/install/turtlesim_control/share/ament_index/resource_index/packages/turtlesim_control
+-- Installing: /home/kgh/robot_ws/src/ROBIT_ROS2_HW/DAY2/install/turtlesim_control/share/turtlesim_control/cmake/turtlesim_controlConfig.cmake
+-- Installing: /home/kgh/robot_ws/src/ROBIT_ROS2_HW/DAY2/install/turtlesim_control/share/turtlesim_control/cmake/turtlesim_controlConfig-version.cmake
+-- Installing: /home/kgh/robot_ws/src/ROBIT_ROS2_HW/DAY2/install/turtlesim_control/share/turtlesim_control/package.xml

@@ -1,0 +1,14 @@
+[0.006s] Invoking command in '/home/kgh/robot_ws/src/ROBIT_ROS2_HW/DAY2/build/turtlesim_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kgh/robot_ws/src/ROBIT_ROS2_HW/DAY2/build/turtlesim_control -- -j20 -l20
+[0.035s] [  9%] [34m[1mGenerating ui_mainwindow.h[0m
+[0.051s] [35m[1mConsolidate compiler generated dependencies of target turtlesim_control[0m
+[0.068s] [ 18%] [32mBuilding CXX object CMakeFiles/turtlesim_control.dir/src/main.cpp.o[0m
+[0.069s] [ 27%] [32mBuilding CXX object CMakeFiles/turtlesim_control.dir/src/main_window.cpp.o[0m
+[0.069s] [ 36%] [32mBuilding CXX object CMakeFiles/turtlesim_control.dir/include/turtlesim_control/moc_main_window.cpp.o[0m
+[2.444s] [ 45%] [32m[1mLinking CXX executable turtlesim_control[0m
+[2.789s] /usr/bin/ld: CMakeFiles/turtlesim_control.dir/include/turtlesim_control/moc_main_window.cpp.o: in function `MainWindow::qt_static_metacall(QObject*, QMetaObject::Call, int, void**)':
+[2.789s] moc_main_window.cpp:(.text+0x36): undefined reference to `MainWindow::on_up_button_clicked()'
+[2.802s] collect2: error: ld returned 1 exit status
+[2.804s] gmake[2]: *** [CMakeFiles/turtlesim_control.dir/build.make:255: turtlesim_control] Error 1
+[2.804s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/turtlesim_control.dir/all] Error 2
+[2.804s] gmake: *** [Makefile:146: all] Error 2
+[2.807s] Invoked command in '/home/kgh/robot_ws/src/ROBIT_ROS2_HW/DAY2/build/turtlesim_control' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kgh/robot_ws/src/ROBIT_ROS2_HW/DAY2/build/turtlesim_control -- -j20 -l20

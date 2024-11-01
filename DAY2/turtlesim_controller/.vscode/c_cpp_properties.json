@@ -1,0 +1,30 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/kgh/robot_ws/install/tutorial_interface/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/kgh/robot_ws/src/ROBIT_ROS2_HW/DAY1/turtlesim_cli/include/**",
+        "/home/kgh/robot_ws/src/ROBIT_ROS2_HW/DAY1/turtlesim_draw/include/**",
+        "/home/kgh/robot_ws/src/ROBIT_ROS2_HW/DAY2/turtlesim_control1/include/**",
+        "/home/kgh/robot_ws/src/ROBIT_ROS2_HW/DAY2/turtlesim_controller/include/**",
+        "/home/kgh/robot_ws/src/my_publisher_pkg/include/**",
+        "/home/kgh/robot_ws/src/my_subscibe_pkg/include/**",
+        "/home/kgh/robot_ws/src/myteleop/include/**",
+        "/home/kgh/robot_ws/src/tutorial_interface/include/**",
+        "include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

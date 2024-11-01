@@ -1,0 +1,53 @@
+[0.008s] Invoking command in '/home/kgh/robot_ws/src/ROBIT_ROS2_HW/DAY2/build/turtlesim_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/kgh/robot_ws/src/ROBIT_ROS2_HW/DAY2/turtlesim_control -DCMAKE_INSTALL_PREFIX=/home/kgh/robot_ws/src/ROBIT_ROS2_HW/DAY2/install/turtlesim_control
+[0.093s] -- The CXX compiler identification is GNU 11.4.0
+[0.099s] -- Detecting CXX compiler ABI info
+[0.170s] -- Detecting CXX compiler ABI info - done
+[0.176s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.176s] -- Detecting CXX compile features
+[0.176s] -- Detecting CXX compile features - done
+[0.180s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.268s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.328s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.357s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.360s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.366s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.375s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.385s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.413s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.415s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.486s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.501s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.527s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.533s] -- Looking for C++ include pthread.h
+[0.597s] -- Looking for C++ include pthread.h - found
+[0.598s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.666s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.667s] -- Found Threads: TRUE  
+[0.723s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.71.0") found components: thread 
+[0.736s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.785s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.786s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.786s] -- Configured cppcheck include dirs: /home/kgh/robot_ws/src/ROBIT_ROS2_HW/DAY2/turtlesim_control/include/turtlesim_control
+[0.786s] -- Configured cppcheck exclude dirs and/or files: 
+[0.786s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.787s] -- Configured cpplint exclude dirs and/or files: 
+[0.787s] -- Added test 'lint_cmake' to check CMake code style
+[0.788s] -- Added test 'uncrustify' to check C / C++ code style
+[0.788s] -- Configured uncrustify additional arguments: 
+[0.788s] -- Added test 'xmllint' to check XML markup files
+[0.789s] -- Configuring done
+[0.790s] [31mCMake Error at CMakeLists.txt:59 (add_executable):
+[0.791s]   Cannot find source file:
+[0.791s] 
+[0.791s]     /home/kgh/robot_ws/src/ROBIT_ROS2_HW/DAY2/turtlesim_control/include/turtlesim_control/mainwindow.hpp
+[0.791s] 
+[0.791s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+[0.791s]   .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+[0.791s] 
+[0.791s] [0m
+[0.795s] [31mCMake Error at CMakeLists.txt:59 (add_executable):
+[0.795s]   No SOURCES given to target: turtlesim_control
+[0.795s] 
+[0.795s] [0m
+[0.795s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[0.799s] Invoked command in '/home/kgh/robot_ws/src/ROBIT_ROS2_HW/DAY2/build/turtlesim_control' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/kgh/robot_ws/src/ROBIT_ROS2_HW/DAY2/turtlesim_control -DCMAKE_INSTALL_PREFIX=/home/kgh/robot_ws/src/ROBIT_ROS2_HW/DAY2/install/turtlesim_control

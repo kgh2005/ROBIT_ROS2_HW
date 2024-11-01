@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package>
+  <name>usbcamera</name>
+  <version>0.1.0</version>
+  <description>
+    Description of the usbcamera package.
+  </description>
+  <maintainer email="author@mail.com">author</maintainer>
+  <author>author</author>
+  <license>BSD</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <build_depend>sensor_msgs</build_depend>  <!-- sensor_msgs 의존성 추가 -->
+  <build_depend>cv_bridge</build_depend>     <!-- cv_bridge 의존성 추가 -->
+  <run_depend>sensor_msgs</run_depend>       <!-- 실행 시 의존성 추가 -->
+  <run_depend>cv_bridge</run_depend>          <!-- cv_bridge 실행 시 의존성 추가 -->
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
