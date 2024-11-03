@@ -10,7 +10,7 @@
 #include <QThread>
 #include "geometry_msgs/msg/twist.hpp"
 #include "std_srvs/srv/empty.hpp"
-#include "turtlesim/srv/set_pen.hpp" // pen 설정을 위한 서비스 헤더 파일 추가(1일차 과제 응용)
+#include "turtlesim/srv/set_pen.hpp"
 #include <turtlesim/srv/spawn.hpp>
 #include <turtlesim/srv/kill.hpp>
 #include <rclcpp/parameter_client.hpp>
@@ -25,9 +25,9 @@ class QNode : public QThread
 public:
   QNode();
   ~QNode();
-  // 거북이 제어를 위한 메서드
+  // 거북이 제어
   void moveTurtle(double linear_x, double angular_z);
-  // 거북이 배경색 제어를 위한 메서드
+  // 거북이 배경색 제어
   void setBackgroundColor(int r, int g, int b);
   void setPenStyle(int r, int g, int b, int width);
 
@@ -37,8 +37,6 @@ public:
   void triangle();
   void setLine(int new_line);
 
-  //void setTurtleShape(const std::string& turtle_name);
-
 
 protected:
   void run();
@@ -47,6 +45,9 @@ private:
   int line = 1;
   std::shared_ptr<rclcpp::Node> node;
   rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr velocity_publisher;
+
+  rclcpp::Node::SharedPtr node_;
+  rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr cmd_vel_subscription_;
 
   rclcpp::Client<std_srvs::srv::Empty>::SharedPtr clear_client_;
   // 파라미터 클라이언트

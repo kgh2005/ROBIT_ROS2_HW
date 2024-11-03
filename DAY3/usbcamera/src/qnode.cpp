@@ -17,8 +17,10 @@ QNode::QNode()
   int argc = 0;
   char** argv = NULL;
   rclcpp::init(argc, argv);
+  // 노드 생성
   node = rclcpp::Node::make_shared("image_recongnition");
 
+  // 구독
   image_subscription = node->create_subscription<sensor_msgs::msg::Image>(
       "/camera1/camera/image_raw", 10,
       std::bind(&QNode::imageCallback, this, std::placeholders::_1)
@@ -37,7 +39,7 @@ QNode::~QNode()
 
 void QNode::run()
 {
-  rclcpp::WallRate loop_rate(20);
+  rclcpp::WallRate loop_rate(60);
   while (rclcpp::ok())
   {
     rclcpp::spin_some(node);

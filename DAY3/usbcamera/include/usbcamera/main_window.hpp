@@ -1,5 +1,5 @@
-#ifndef image_recongnition_MAIN_WINDOW_H
-#define image_recongnition_MAIN_WINDOW_H
+#ifndef usbcamera_MAIN_WINDOW_H
+#define usbcamera_MAIN_WINDOW_H
 
 /*****************************************************************************
 ** Includes
@@ -33,4 +33,4 @@ private Q_SLOTS:
   void updateImage(const QImage &image);
 };
 
-#endif  // image_recongnition_MAIN_WINDOW_H
+#endif

@@ -37,8 +37,6 @@ void MainWindow::closeEvent(QCloseEvent* event)
 
 MainWindow::~MainWindow()
 {
-  // qnodeThread->quit();  // 스레드 종료 요청
-  // qnodeThread->wait();  // 스레드 종료 대기
   delete ui;
 }
 
@@ -51,22 +49,18 @@ void MainWindow::updateVelocityDisplay(double linear_x, double angular_z)
 void MainWindow::on_btn_w_clicked()
 {
   qnode->moveTurtle(1.0, 0.0); // 직진 처리
-  //updateVelocityDisplay(1.0, 0.0);
 }
 void MainWindow::on_btn_s_clicked()
 {
   qnode->moveTurtle(-1.0, 0.0); // 후진 처리
-  //updateVelocityDisplay(-1.0, 0.0);
 }
 void MainWindow::on_btn_a_clicked()
 {
   qnode->moveTurtle(0.0, 1.0); // 좌회전 처리
-  //updateVelocityDisplay(0.0, 1.0);
 }
 void MainWindow::on_btn_d_clicked()
 {
   qnode->moveTurtle(0.0, -1.0); // 우회전 처리
-  //updateVelocityDisplay(0.0, -1.0);
 }
 
 // background 설정

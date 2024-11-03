@@ -1,6 +1,6 @@
 #include "turtlesim_draw/turtlesim_draw.hpp"
 
-TurtlesimDraw::TurtlesimDraw() : Node("turtlesim_cli") {
+TurtlesimDraw::TurtlesimDraw() : Node("turtlesim_draw") {
     // Publisher, Client 초기화
     control_publisher_ = this->create_publisher<geometry_msgs::msg::Twist>("/turtle1/cmd_vel", 10);
     set_pen_client_ = this->create_client<turtlesim::srv::SetPen>("/turtle1/set_pen");

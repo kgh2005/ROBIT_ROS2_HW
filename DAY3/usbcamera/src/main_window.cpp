@@ -30,15 +30,14 @@ MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent), ui(new Ui::MainWi
 
 void MainWindow::updateImage(const QImage &image)
 {
-  if (QThread::currentThread() == this->thread())
+  if (QThread::currentThread() == this->thread()) // 현재 실행 중인 스레드가 GUI 스레드인지 확인
   {
-    // 이미지의 해상도비를 유지하면서 QLabel의 크기에 맞게 조정
+    // 이지미를 QPixmap으로 변환하고, QLabel 크게 맞추어 비율을 유지하며 조정
     QPixmap pixmap = QPixmap::fromImage(image).scaled(ui->label->size(), Qt::KeepAspectRatio);
     ui->label->setPixmap(pixmap);
   }
   else
   {
-    // UI 스레드에서 안전하게 실행되도록 보장
     QMetaObject::invokeMethod(this, [this, image]()
     {
       QPixmap pixmap = QPixmap::fromImage(image).scaled(ui->label->size(), Qt::KeepAspectRatio);

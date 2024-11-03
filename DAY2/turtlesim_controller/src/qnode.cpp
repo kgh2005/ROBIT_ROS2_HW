@@ -7,6 +7,8 @@ QNode::QNode()
   char** argv = NULL;
   rclcpp::init(argc, argv);
   node = rclcpp::Node::make_shared("qt_turtlesim_controller");
+  node_ = rclcpp::Node::make_shared("velocity_subscriber");
+
 
   // cmd_vel 퍼블리셔 생성
   velocity_publisher = node->create_publisher<geometry_msgs::msg::Twist>("/turtle1/cmd_vel", 10);
@@ -16,14 +18,23 @@ QNode::QNode()
   // 배경 초기화를 위해 clear_client_ 생성
   clear_client_ = node->create_client<std_srvs::srv::Empty>("/clear");
 
-  // cmd_vel 구독 관련 설정
-  cmd_vel_subscription = node->create_subscription<geometry_msgs::msg::Twist>(
+
+  cmd_vel_subscription_ = node_->create_subscription<geometry_msgs::msg::Twist>(
       "/turtle1/cmd_vel",
       10,
       [this](geometry_msgs::msg::Twist::SharedPtr msg) {
           emit cmdVelUpdated(msg->linear.x, msg->angular.z);
       }
   );
+
+  // // cmd_vel 구독 관련 설정
+  // cmd_vel_subscription = node->create_subscription<geometry_msgs::msg::Twist>(
+  //     "/turtle1/cmd_vel",
+  //     10,
+  //     [this](geometry_msgs::msg::Twist::SharedPtr msg) {
+  //         emit cmdVelUpdated(msg->linear.x, msg->angular.z);
+  //     }
+  // );
 
   // pen 설정을 위한 set_pen_client_ 생성
   set_pen_client_ = node->create_client<turtlesim::srv::SetPen>("/turtle1/set_pen");
