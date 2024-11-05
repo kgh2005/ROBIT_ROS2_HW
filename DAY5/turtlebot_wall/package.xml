@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>turtlebot_wall</name>
+  <version>0.1.0</version>
+  <description>A ROS 2 package for controlling a TurtleBot to follow walls using Lidar data.</description>
+  <maintainer email="leokim0503@kw.ac.kr">kgh</maintainer>
+  <license>BSD 3-Clause</license> <!-- 사용하려는 라이센스에 맞게 변경 -->
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- 의존성 추가 -->
+  <depend>rclcpp</depend>
+  <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
