@@ -10,16 +10,6 @@ ParameterImgNode::ParameterImgNode(rclcpp::Node::SharedPtr node, QObject* parent
   parameter_publisher_ = node_->create_publisher<std_msgs::msg::Int32>("/parameter_update", 10);
 }
 
-void ParameterImgNode::declareParameters()
-{
-    // HSV 파라미터
-    node_->declare_parameter("h_lower", 0);
-    node_->declare_parameter("h_upper", 179);
-    node_->declare_parameter("s_lower", 0);
-    node_->declare_parameter("s_upper", 255);
-    node_->declare_parameter("v_lower", 0);
-    node_->declare_parameter("v_upper", 255);
-}
 void ParameterImgNode::run()
 {
   // 비동기 클라이언트 노드 실행

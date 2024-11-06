@@ -70,6 +70,8 @@ private:
   Ui::MainWindowDesign* ui;
   ParameterImgNode* parameterImgNode;  // 파라미터 설정 노드 객체
   ProcessImgNode* processImgNode;
+
+  rclcpp::Node::SharedPtr node_;
   void closeEvent(QCloseEvent* event);
 
     int hueLow_1; // Hue low 값

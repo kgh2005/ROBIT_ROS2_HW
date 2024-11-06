@@ -9,6 +9,8 @@
 #include <opencv2/opencv.hpp>
 #include "std_msgs/msg/int32.hpp"
 #include "cam_params_pkg/parameter_img_node.hpp"
+#include "std_msgs/msg/int32_multi_array.hpp"
+
 
 class ProcessImgNode : public QThread
 {
@@ -16,8 +18,8 @@ class ProcessImgNode : public QThread
 
 public:
   explicit ProcessImgNode(rclcpp::Node::SharedPtr node, QObject* parent = nullptr);
-  void updateHSVParameters(int hueLow, int hueUpp, int satrLow, int satrUpp, int valLow, int valUpp);
-  //void updateParameter(const std_msgs::msg::Int32::SharedPtr msg);
+  //void updateHSVParameters(int hueLow, int hueUpp, int satrLow, int satrUpp, int valLow, int valUpp);
+  //void updateParameter(const std_msgs::msg::Int32MultiArray::SharedPtr msg);
   ~ProcessImgNode();
 
 protected:
@@ -25,7 +27,7 @@ protected:
 
 private:
   rclcpp::Node::SharedPtr node_;
-  rclcpp::Subscription<std_msgs::msg::Int32>::SharedPtr parameter_subscription_; // 추가된 멤버 변수
+  //rclcpp::Subscription<std_msgs::msg::Int32MultiArray>::SharedPtr parameter_subscription_;
   rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr image_subscription_;
 
   // HSV 파라미터

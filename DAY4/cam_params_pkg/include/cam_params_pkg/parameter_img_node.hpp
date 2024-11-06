@@ -20,7 +20,7 @@ public:
 
   // 파라미터 설정 메서드 추가
   void setParameter(const std::string &param_name, int value);
-  void declareParameters(); // 파라미터 선언 메서드 추가
+
 
 
 protected:

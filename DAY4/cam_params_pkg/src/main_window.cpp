@@ -8,6 +8,18 @@ MainWindow::MainWindow(QWidget* parent)
   QIcon icon(":/images/icon.png");
   this->setWindowIcon(icon);
 
+  node_ = rclcpp::Node::make_shared("main_window_node");
+
+  // 파라미터 선언 (기본값 설정)
+  node_->declare_parameter("hueLow", 0);
+  node_->declare_parameter("hueUpp", 255);
+  node_->declare_parameter("satrLow", 0);
+  node_->declare_parameter("satrUpp", 255);
+  node_->declare_parameter("valLow", 0);
+  node_->declare_parameter("valUpp", 255);
+
+
+
   ui->hue_low_slider->setRange(0, 180);
   ui->hue_low_spinbox->setRange(0, 180);
   ui->hue_upp_slider->setRange(0, 180);
@@ -50,18 +62,26 @@ void MainWindow::sendParameterValue(const QString& paramName, int value) {
         // 파라미터 이름에 따라 값을 설정
         if (paramName == "hue_low") {
             hueLow_1 = value;
+            node_->set_parameter(rclcpp::Parameter("hueLow", hueLow_1));
         } else if (paramName == "hue_upp") {
             hueUpp_1 = value;
+            node_->set_parameter(rclcpp::Parameter("hueUpp", hueUpp_1));
         } else if (paramName == "saturation_low") {
             satrLow_1 = value;
+            node_->set_parameter(rclcpp::Parameter("satrLow", satrLow_1));
         } else if (paramName == "saturation_upp") {
             satrUpp_1 = value;
+            node_->set_parameter(rclcpp::Parameter("satrUpp", satrUpp_1));
         } else if (paramName == "value_low") {
             valLow_1 = value;
+            node_->set_parameter(rclcpp::Parameter("valLow", valLow_1));
         } else if (paramName == "value_upp") {
             valUpp_1 = value;
+            node_->set_parameter(rclcpp::Parameter("valUpp", valUpp_1));
         }
-        processImgNode->updateHSVParameters(hueLow_1, hueUpp_1, satrLow_1, satrUpp_1, valLow_1, valUpp_1);
+
+        // 파라미터를 동적으로 변경하는 예시
+        //processImgNode->updateHSVParameters(hueLow_1, hueUpp_1, satrLow_1, satrUpp_1, valLow_1, valUpp_1);
         // // `ProcessImgNode`의 HSV 파라미터 업데이트 메서드 호출
         // if (processImgNode) {
         //     processImgNode->updateHSVParameters(hueLow_1, hueUpp_1, satrLow_1, satrUpp_1, valLow_1, valUpp_1);
