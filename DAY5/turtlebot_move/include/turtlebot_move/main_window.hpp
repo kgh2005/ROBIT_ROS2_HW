@@ -9,9 +9,7 @@
 #include "QIcon"
 #include "qnode.hpp"
 #include <QPainter>
-#include <QPolygon>
 #include <QMouseEvent>
-#include <cmath>
 #include "ui_mainwindow.h"
 
 
@@ -28,18 +26,14 @@ protected:
   void mousePressEvent(QMouseEvent* event) override;
   void closeEvent(QCloseEvent* event) override;
 
-private Q_SLOTS:
-  void updateRobotPosition(double x, double y);
-
 private:
   Ui::MainWindowDesign* ui;
 
   QNode* qnode;
-  QPointF current_pos;
-  QPointF goal_pos;
 
-  QPointF guiToMap(const QPoint& gui_point);
-  QPoint mapToGui(const QPointF& map_point);
+  QPoint clicked_pos;     // 추가: 클릭된 위치 저장
+  bool has_clicked{false};
+  bool isInsideHexagon(const QPoint& point);
 };
 
 #endif  // turtlebot_move_MAIN_WINDOW_H

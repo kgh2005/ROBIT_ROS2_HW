@@ -13,6 +13,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(nav_msgs REQUIRED)
+find_package(tf2 REQUIRED)
+find_package(tf2_geometry_msgs REQUIRED)
 find_package(Boost 1.71.0 REQUIRED COMPONENTS thread)
 find_package(Qt5 COMPONENTS Widgets Core Gui Network REQUIRED)
 # further dependencies manually.
@@ -41,7 +43,7 @@ add_executable(${PROJECT_NAME}
     ${QT_RESOUCE_HPP}
     ${QT_UI_HPP}
   )
-ament_target_dependencies(${PROJECT_NAME} rclcpp  Boost nav_msgs)
+ament_target_dependencies(${PROJECT_NAME} rclcpp  Boost nav_msgs tf2 tf2_geometry_msgs)
 target_link_libraries(${PROJECT_NAME} Qt5::Widgets Qt5::Core Qt5::Gui Qt5::Network ${OpenCV_LIBRARIES})
 install(TARGETS ${PROJECT_NAME} DESTINATION lib/${PROJECT_NAME})
 if(BUILD_TESTING)
