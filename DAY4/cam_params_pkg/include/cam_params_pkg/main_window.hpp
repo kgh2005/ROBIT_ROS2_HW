@@ -72,12 +72,12 @@ private:
   ProcessImgNode* processImgNode;
   void closeEvent(QCloseEvent* event);
 
-    int hueLow_; // Hue low 값
-    int hueUpp_; // Hue upper 값
-    int satrLow_; // Saturation low 값
-    int satrUpp_; // Saturation upper 값
-    int valLow_; // Value low 값
-    int valUpp_; // Value upper 값
+    int hueLow_1; // Hue low 값
+    int hueUpp_1; // Hue upper 값
+    int satrLow_1; // Saturation low 값
+    int satrUpp_1; // Saturation upper 값
+    int valLow_1; // Value low 값
+    int valUpp_1; // Value upper 값
     int value; // 사용하고자 하는 값
 };
 

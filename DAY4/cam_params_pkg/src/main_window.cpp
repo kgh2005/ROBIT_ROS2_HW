@@ -10,8 +10,8 @@ MainWindow::MainWindow(QWidget* parent)
 
   ui->hue_low_slider->setRange(0, 180);
   ui->hue_low_spinbox->setRange(0, 180);
-  ui->hue_upp_slider->setRange(0, 255);
-  ui->hue_upp_spinbox->setRange(0, 255);
+  ui->hue_upp_slider->setRange(0, 180);
+  ui->hue_upp_spinbox->setRange(0, 180);
   ui->satr_low_slider->setRange(0, 255);
   ui->satr_low_spinbox->setRange(0, 255);
   ui->satr_upp_slider->setRange(0, 255);
@@ -49,25 +49,25 @@ void MainWindow::sendParameterValue(const QString& paramName, int value) {
     if (parameterImgNode) {
         // 파라미터 이름에 따라 값을 설정
         if (paramName == "hue_low") {
-            hueLow_ = value;
+            hueLow_1 = value;
         } else if (paramName == "hue_upp") {
-            hueUpp_ = value;
+            hueUpp_1 = value;
         } else if (paramName == "saturation_low") {
-            satrLow_ = value;
+            satrLow_1 = value;
         } else if (paramName == "saturation_upp") {
-            satrUpp_ = value;
+            satrUpp_1 = value;
         } else if (paramName == "value_low") {
-            valLow_ = value;
+            valLow_1 = value;
         } else if (paramName == "value_upp") {
-            valUpp_ = value;
+            valUpp_1 = value;
         }
-
-        // `ProcessImgNode`의 HSV 파라미터 업데이트 메서드 호출
-        if (processImgNode) {
-            processImgNode->updateHSVParameters(hueLow_, hueUpp_, satrLow_, satrUpp_, valLow_, valUpp_);
-        } else {
-            qWarning() << "ProcessImgNode is not initialized.";
-        }
+        processImgNode->updateHSVParameters(hueLow_1, hueUpp_1, satrLow_1, satrUpp_1, valLow_1, valUpp_1);
+        // // `ProcessImgNode`의 HSV 파라미터 업데이트 메서드 호출
+        // if (processImgNode) {
+        //     processImgNode->updateHSVParameters(hueLow_1, hueUpp_1, satrLow_1, satrUpp_1, valLow_1, valUpp_1);
+        // } else {
+        //     qWarning() << "ProcessImgNode is not initialized.";
+        // }
     } else {
         qWarning() << "parameterImgNode is not initialized.";
     }

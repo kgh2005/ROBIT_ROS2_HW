@@ -53,8 +53,10 @@ void ProcessImgNode::imageCallback(const sensor_msgs::msg::Image::SharedPtr msg)
         // 마스크 이미지 생성
         cv::Mat hsvMask;
         cv::inRange(hsvImage,
-                    cv::Scalar(hueLow_, satrLow_, valLow_),
-                    cv::Scalar(hueUpp_, satrUpp_, valUpp_),
+                    // cv::Scalar(hueLow_, satrLow_, valLow_),
+                    // cv::Scalar(hueUpp_, satrUpp_, valUpp_),
+                    cv::Scalar(10, 100, 100),
+                    cv::Scalar(25, 255, 255),
                     hsvMask);
 
         // 필터링된 이미지 생성
@@ -74,8 +76,3 @@ void ProcessImgNode::imageCallback(const sensor_msgs::msg::Image::SharedPtr msg)
 
 
 ProcessImgNode::~ProcessImgNode() {}
-
-
-
-
-

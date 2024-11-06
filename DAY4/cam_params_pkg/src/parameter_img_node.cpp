@@ -27,11 +27,12 @@ void ParameterImgNode::run()
 }
 
 void ParameterImgNode::setParameter(const std::string &param_name, int value) {
-  // 파라미터 업데이트를 위한 로직 추가
+  auto param = rclcpp::Parameter(param_name, value);
+  parameters_client_->set_parameters({param});
+
+  // 파라미터 변경 알림을 위해 메시지를 발행 (optional)
   auto msg = std_msgs::msg::Int32();
   msg.data = value;
-
-  // 파라미터 이름에 따라 메시지를 발행
   parameter_publisher_->publish(msg);
 }
 
